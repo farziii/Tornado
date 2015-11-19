@@ -1,5 +1,7 @@
+
+# coding=utf-8
+
 import os.path
-import random
 import tornado.httpserver
 import tornado.ioloop
 import tornado.options
@@ -9,6 +11,7 @@ from tornado.options import define, options
 define("port", default=8000, help="run on the given port", type=int)
 
 
+# noinspection PyMissingOrEmptyDocstring
 class MainHandler(tornado.web.RequestHandler):
     def data_received(self, chunk):
         pass
@@ -17,6 +20,7 @@ class MainHandler(tornado.web.RequestHandler):
         self.render('index.html')
 
 
+# noinspection PyMissingOrEmptyDocstring
 class AboutHandler(tornado.web.RequestHandler):
     def data_received(self, chunk):
         pass
@@ -25,6 +29,7 @@ class AboutHandler(tornado.web.RequestHandler):
         self.render('about.html')
 
 
+# noinspection PyMissingOrEmptyDocstring
 class ContactHandler(tornado.web.RequestHandler):
     def data_received(self, chunk):
         pass
@@ -33,6 +38,7 @@ class ContactHandler(tornado.web.RequestHandler):
         self.render('Contact.html')
 
 
+# noinspection PyMissingOrEmptyDocstring
 class DashBoardHandler(tornado.web.RequestHandler):
     def data_received(self, chunk):
         pass
@@ -41,6 +47,7 @@ class DashBoardHandler(tornado.web.RequestHandler):
         self.render('DashBoard.html')
 
 
+# noinspection PyMissingOrEmptyDocstring
 class HelpHandler(tornado.web.RequestHandler):
     def data_received(self, chunk):
         pass
@@ -49,6 +56,7 @@ class HelpHandler(tornado.web.RequestHandler):
         self.render('help.html')
 
 
+# noinspection PyMissingOrEmptyDocstring
 class LoginHandler(tornado.web.RequestHandler):
     def data_received(self, chunk):
         pass
@@ -57,6 +65,7 @@ class LoginHandler(tornado.web.RequestHandler):
         self.render('Login.html')
 
 
+# noinspection PyMissingOrEmptyDocstring
 class RegisterHandler(tornado.web.RequestHandler):
     def data_received(self, chunk):
         pass
@@ -65,6 +74,7 @@ class RegisterHandler(tornado.web.RequestHandler):
         self.render('Register.html')
 
 
+# noinspection PyMissingOrEmptyDocstring
 class Register2Handler(tornado.web.RequestHandler):
     def data_received(self, chunk):
         pass
@@ -73,32 +83,22 @@ class Register2Handler(tornado.web.RequestHandler):
         self.render('Register2.html')
 
 
+# noinspection PyMissingOrEmptyDocstring
 class WebpagesHandler(tornado.web.RequestHandler):
     def data_received(self, chunk):
-        """
-
-        :param chunk:
-        """
         pass
 
     def get(self):
         self.render('Webpages.html')
 
 
+# noinspection PyMissingOrEmptyDocstring
 class WebshowHandler(tornado.web.RequestHandler):
     def data_received(self, chunk):
-        """
-
-        :param chunk:
-        """
         pass
 
     def get(self):
         self.render('webshow.html')
-
-
-# Put here yours handlers.
-
 
 
 if __name__ == '__main__':
