@@ -1,7 +1,6 @@
 
 
 body {
-  background-image:url(azadpas.jpg);
   text-align:center;
   margin-top:30px;
 }
@@ -10,14 +9,12 @@ img{ margin-bottom:-30px;}
   margin: 80px auto;
   width: 640px;
 }
-form{float:center;}
 .login {
   margin: 0 auto;
   padding: 20px 20px 20px;
   width: 300px;
   height: 310px;
   border-radius: 3px;
-  background-image:url(alogin.png);
 }
 
 .login p {
@@ -37,14 +34,12 @@ input {
 }
 
 input[type=text]{
-background-image:url(name.png);
   margin: 5px;
   padding: 0 3px;
   height: 48px;
   border-radius: 2px;
 }
 input[type=password]{
-background-image:url(apass.png);
   margin: 5px;
   padding: 0 3px;
   height: 48px;
@@ -52,9 +47,11 @@ background-image:url(apass.png);
 }
 
 input[type=submit] {
-background-image:url(vlog.png);
   width: 272px;
   height: 50px;
   font-size: 18px;
   color: #ffffff;
+}
+
+#wl-username {
 }

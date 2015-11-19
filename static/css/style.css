@@ -1,7 +1,7 @@
 /**************************************/
 /* Load Fonts [bnazanin] */
 @font-face {
-  font-family: 'b nazanin';
+  font-family: 'B Nazanin';
   src: url('../font/BNazanin.eot') format('eot'),  /* IE6,8 */
 url('../font/BNazanin.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 url('../font/BNazanin.ttf') format('truetype');  /* Saf3?5, Chrome4+, FF3.5, Opera 10+ */
@@ -28,7 +28,7 @@ fieldset, form, label, legend,
 table, caption, tbody, thead, tr, th, td {
 	background: transparent;
 	border: 0;
-	font-family: 'b nazanin';
+	font-family:"B Nazanin";
 	font-size: 100%;
 	font-weight: normal;
 	margin: 0;
@@ -75,9 +75,8 @@ dt { font-weight:bold; }
 q { quotes: none; }
 
 blockquote:before, blockquote:after,
-q:before, q:after { 
-	content: ''; 
-	content:none 
+q:before, q:after {
+	content:none;
 }
 table {
 	border-collapse: collapse;
@@ -126,7 +125,7 @@ body {
 	height: 130px;
 	background: url('../images/logo.png') no-repeat;
 	margin-right: 40px;
-	margin-top: 0px;
+	margin-top: 0;
 }
 #header .right #tagline {
 	width: 419px;
@@ -160,7 +159,7 @@ body {
 
 #header .left #searchfrm form input[type="text"] {
 	background: #072e63;
-	box-shadow: 1px 1px 1px rgba(255,255,255,.10),
+	box-shadow: 1px 1px 1px #ffffff,
 	            inset 1px 1px 1px #000;
 	border-radius: 3px;
 	font: 18px 'b nazanin';
@@ -247,7 +246,7 @@ body {
 #right-sidebar .block .block-title  {
 	text-align: center;
 	color: #234678;
-	text-shadow: 0 0 1px rgba(35,70,120,.70);
+	text-shadow: 0 0 1px #234678;
 	padding-bottom: 15px;
 	margin-bottom: 20px;
 	background: url('../images/block-title.png') center bottom no-repeat;
@@ -269,7 +268,7 @@ body {
 #content .post .post-title  {
 	color: #444;
 	
-	float: center;
+	float:inherit;
 	margin-right: 35px ;
 	text-shadow: 1px 1px 1px #aaa;
 	
@@ -277,7 +276,7 @@ body {
 #content .post .post-title:hover {color: #234678;}
 #content .post .post-thumb {
 	margin: 0 10px;
-	float: center;
+	float:inherit;
 }
 
 /* End Container */
@@ -288,7 +287,7 @@ body {
 /* Start Footer */
 #footer {
 	background: #366995;
-	padding: 0px;
+	padding: 0;
 }
 
 #footer .left {
@@ -308,7 +307,7 @@ body {
 	color: #fff;
 	text-align: center;
 	margin-bottom: 20px;
-	margin-top:-20;
+	margin-top:-20px;
 	font-size: 20px;
 }
 /* End Container */

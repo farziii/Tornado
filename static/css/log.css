@@ -157,9 +157,9 @@ body.fluid-fixed-adminbar #panel-outer {
 	margin: -3px 0 0 7px;
     background-color: #EEEEEE;
     border: 1px solid #000000;
-    -moz-box-shadow: 0px 0px 4px #000000;
-    -webkit-box-shadow: 0px 0px 4px #000000;
-    box-shadow: 0px 0px 4px #000000;
+    -moz-box-shadow: 0 0 4px #000000;
+    -webkit-box-shadow: 0 0 4px #000000;
+    box-shadow: 0 0 4px #000000;
 }
 #container #panel {
 	background-color: #FFFFFF;
@@ -199,9 +199,9 @@ body.fluid-fixed-adminbar #panel-outer {
 /*************************************************************************************************************/
 #login-container-outer, #container #adminbar-outer, #container #panel-outer {
 	border: 1px solid #444444;
-    -moz-box-shadow: 0px 0px 10px #000000;
-    -webkit-box-shadow: 0px 0px 10px #000000;
-    box-shadow: 0px 0px 10px #000000;
+    -moz-box-shadow: 0 0 10px #000000;
+    -webkit-box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px #000000;
 }
 #login-container, #container #adminbar, #container #panel {
 	border: 1px solid #222222;
@@ -522,7 +522,7 @@ form legend {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F6F6F6', endColorstr='#EEEEEE');
 }
 form input[type=text]:focus, form input[type=password]:focus, form textarea:focus {
-    font-family: B Yekan;
+    font-family: "B Yekan";
  background-color: #FFFFFF;
 	background-image: -moz-linear-gradient(top, #FFFFFF, #F6F6F6);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F6F6F6));
@@ -532,7 +532,7 @@ form input[type=text]:focus, form input[type=password]:focus, form textarea:focu
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F6F6F6');
 }
 form label {
-font-family: B Yekan;
+font-family: "B Yekan";
 	text-align: right;
     padding: 5px 10px 5px 5px;
     margin: 5px 0;
@@ -977,8 +977,7 @@ ul#widget-menu li a.w-link span {
 	right: 2px;
 	top: 2px;
 	display: block;
-	position: absolute;
-	padding: 0 5px;
+    padding: 0 5px;
     background-color: #88c763;
 	color: #FFFFFF;
 	font-weight: bold;
@@ -1043,7 +1042,6 @@ ul#widget-menu li ul.widget-sub-nav li a {
     -webkit-border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    background-color: #EEEEEE;
     background-image: -moz-linear-gradient(#F2F2F2, #DDDDDD);
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #F2F2F2),color-stop(1, #DDDDDD));
     background-image: -webkit-linear-gradient(#F2F2F2, #DDDDDD);
@@ -1148,7 +1146,6 @@ ul#main-menu li a {
 	font-weight: bold;
 	color: #333333;
 	text-shadow: 0 1px 1px #EEEEEE;
-    background-color: #EEEEEE;
     background-image: -moz-linear-gradient(#EEEEEE, #CCCCCC);
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #EEEEEE),color-stop(1, #CCCCCC));
     background-image: -webkit-linear-gradient(#EEEEEE, #CCCCCC);
@@ -1165,7 +1162,6 @@ ul#main-menu li a:hover {
 ul#main-menu li a.active {
 	background: #FFFFFF;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#FFFFFF');
-    text-shadow: none;
     text-shadow: 0 1px 1px #FFFFFF;
 }
 ul#main-menu li a img {
@@ -1304,7 +1300,6 @@ ul.pagination li a.page {
 ul.pagination li a.page:hover, ul.pagination li span.page-active {
     display: block;
     border: 1px solid #0CA1D3;
-    background-color: #EEEEEE;
     text-decoration: none;
     font-weight: bold;
     color: #FFFFFF;

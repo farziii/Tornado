@@ -5,58 +5,84 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Register</title>
-<link href="../static/css/main.css" rel="stylesheet" type="text/css">
+<link href="../static/css/loginsty.css" rel="stylesheet" type="text/css">
 <link href="../static/css/log.css"  rel="stylesheet" type="text/css" >
         
         <!-- Uniform jquery plugin style, for styling form elements -->
-<link href="../static/css/jquery.uniform.css rel="stylesheet" type="text/css" >
+<!-- <link href="../static/css/jquery.uniform.css rel="stylesheet" type="text/css" > -->
  
 </head>
 
 <body>
-
-
- <div id="login-container-outer" class="radius">
-            <div id="login-container" class="radius">
-                <div id="login-header" class="radius-top">
-
-                <img src="../static/images/register-logo.png" alt="login logo" width="356" height="146" />
-                    
-                </div>
-                
-    <div id="login-content">
- <form method="POST" action="index.php" id="wl-form" name="wl-form">
-                        <label for="wl-username">نام کاربری</label>
-                        <input type="text" id="wl-username" type="text" name="username" value placeholder="نام کاربری" />
-                        
-                         <label for="wl-username">ایمیل</label>
-                        <input type="email id="wl-username" type="email" name="username" value placeholder="ایمیل" />
-                        
-                        <label for="wl-password">رمز عبور</label>
-                        <input type="password" id="wl-password" type="password" name="password" value placeholder="رمز عبور" />
-                        <label for="wl-password">تکرار رمز عبور </label>
-                        <input type="password" id="wl-password" type="password" name="password" value placeholder="رمز عبور" />
-                      
-<input name="wl-btn" type="submit" class="fright" id="wl-btn" formaction="index.html" value="ثبت نام" />
-                    </form>
-                    
-                    
-                   <form action="javascript: void(0)" method="post" id="wr-form" name="wr-form" class="dis-none">
-                        <label for="wr-email">Enter your email</label>
-                        <input type="text" id="wr-email" name="wr-email" />
-                        <p class="tright">
-                            <input type="submit" value="Send the password" id="wr-btn" name="wr-btn" />
-                        </p>
-                    </form>
-
-                </div>
-            </div>
-            <!-- END Login Container -->
-
+<div id="login-container-outer" class="radius">
+    <div id="login-container" class="radius">
+        <div id="login-header" class="radius-top">
+            <img src="../static/images/register-logo.png" alt="login logo" width="356" height="146" />
         </div>
-        
-
-
+        <div id="login-content">
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend> مشخصات کاربری </legend>
+                    <br>
+                    <label> نام و نام خانوادگی : </label>
+                    <label>
+                        <input name="txtName" type="text">
+                    </label> <br>
+                    <label>نام کاربری : </label> <label>
+                    <input name="txtName" type="text">
+                </label> <br>
+                    <label> جنسیت :</label> زن <label>
+                    <input value="زن" name="rdS-e-x" type="radio">
+                </label> مرد <label>
+                    <input value="مرد" name="rdS-e-x" type="radio">
+                </label> <br>
+                    <label>نوع کاربری (نقش) : </label>مدیر سایت <label>
+                    <input name="chksport" value="Manager" type="checkbox">
+                </label>توسعه دهنده وب <label>
+                    <input name="chksport" value="developer" type="checkbox">
+                </label>کاربر عادی<label>
+                    <input name="chksport" value="user" type="checkbox">
+                </label> <br>
+                    <label>نوع کاربری :</label>
+                    <label>
+                        <select name="ddlknowus">
+                            <optgroup label="نقش"></optgroup>
+                            <option selected="selected">مدیر سایت</option>
+                            <option>توسعه دهنده وب</option>
+                            <option>کاربر عادی</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label> تصویر : </label> <input name="flpicture" type="file"> <br>
+                </fieldset>
+                <fieldset>
+                    <legend> مشخصات عضویت </legend>
+                    <label> ایمیل : </label> <label>
+                    <input name="email" type="email">
+                </label> <br>
+                    <label> رمز عبور : </label> <label>
+                    <input style="font-weight: 500; font-style: normal; color: #000000;" name="txtpassword"
+                           type="password">
+                </label> <br>
+                    <label>تکرار روز عبور : </label> <label>
+                    <input style="font-weight: 500; font-style: normal; color: #000000;" name="txtpassword"
+                           type="password">
+                </label> <br>
+                </fieldset>
+                <br>
+                <input value=" ثبت نام " type="submit">
+            </form>
+            <form action="javascript: void(0)" method="post" id="wr-form" name="wr-form" class="dis-none">
+                <label for="wr-email">Enter your email</label>
+                <input type="text" id="wr-email" name="wr-email" />
+                <p class="tright">
+                    <input type="submit" value="Send the password" id="wr-btn" name="wr-btn" />
+                </p>
+            </form>
+        </div>
+    </div>
+    <!-- END Login Container -->
+</div>
 
 </body>
 </html>

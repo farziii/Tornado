@@ -1,7 +1,10 @@
 /***=== SIMPLE CSS RESET ===***/
-font-face {
-	font-family: 'B Roya', serif;
-	src: url('../font/BRoya.eot?#') format('eot'),  /* IE6–8 */ url('../font/BRoya.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../font/BRoya.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+@font-face {
+	font-family: 'B Roya';
+	src: url('../font/BRoya.eot') format('eot'),
+		/* IE6–8 */ url('../font/BRoya.woff') format('woff'),
+		/* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../font/BRoya.ttf') format('truetype');
+	/* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
 
 body, ul, li, p, h1, h2, h3, h4, h5 {
@@ -57,13 +60,12 @@ h3 {
 	text-shadow: 0 1px 0 #FFF;
 	margin-bottom: 5px;
 	direction: rtl;
-	text-align: center
+	text-align: center;
 }
 h4 {
 	font: 400 18px 'B Roya', sans-serif;
 	color: #222;
 	text-shadow: 0 1px 0 #FFF;
-	margin-bottom: 5px;
 	text-align: center;
 	margin-bottom: 15px;
 }
@@ -71,7 +73,6 @@ h5 {
 	font: 400 14px 'B Roya', sans-serif;
 	color: #222;
 	text-shadow: 0 1px 0 #FFF;
-	margin-bottom: 5px;
 	margin-bottom: 8px;
 }
 p.free {
@@ -364,41 +365,15 @@ ul.socialIcons li a img {
 	-o-transition-duration: 0.5s;
 	-ms-transition-duration: 0.5s;
 	transition-duration: 0.5s;
-	-webkit-transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
-	-o-transition-duration: 0.5s;
-	-ms-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	-webkit-transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
-	-o-transition-duration: 0.5s;
-	-ms-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	-webkit-transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
-	-o-transition-duration: 0.5s;
-	-ms-transition-duration: 0.5s;
-	transition-duration: 0.5s;
 	-webkit-transition-property: -webkit-transform;
 	-moz-transition-property: -moz-transform;
 	-o-transition-property: -o-transform;
 	-ms-transition-property: -ms-transform;
-	transition: transform transition-property: -webkit-transform;
-	-webkit-transition-property: -webkit-transform;
-	-moz-transition-property: -moz-transform;
-	-o-transition-property: -o-transform;
-	-ms-transition-property: -ms-transform;
-	transition: transform transition-property: -moz-transform;
-	-webkit-transition-property: -webkit-transform;
-	-moz-transition-property: -moz-transform;
-	-o-transition-property: -o-transform;
-	-ms-transition-property: -ms-transform;
-	transition: transform transition-property: -o-transform;
-	-webkit-transition-property: -webkit-transform;
-	-moz-transition-property: -moz-transform;
-	-o-transition-property: -o-transform;
-	-ms-transition-property: -ms-transform;
-	transition: transform transition-property: transform;
+	transition: transform;
+	transition-property: -webkit-transform;
+	transition-property: -moz-transform;
+	transition-property: -o-transform;
+	transition-property: transform;
 }
 ul.socialIcons li a img:hover {
 	-moz-transform: rotate(7deg);
@@ -415,7 +390,7 @@ div.vertical {
 div.items {
 	position: absolute;
 	height: 20000em;
-	margin: 0px;
+	margin: 0;
 }
 div.items div.section {
 	padding: 10px 0 10px 10px;
@@ -452,7 +427,7 @@ div.item:after {
 	z-index: 20;
 }
 div.freebie:before {
-	content: url('../images/img/freebieRibbon.png');
+	content: url('../images/logo.png');
 	position: absolute;
 	display: block;
 	z-index: 2000;
@@ -463,8 +438,7 @@ div.freebie:before {
 }
 div.item img.projectThumb {
 	display: block;
-	margin: 0 auto;
-	margin-top: 4px;
+	margin: 4px auto 0;
 	border: 7px solid #CCC;
 	outline: 1px solid #FFF;
 }
@@ -478,13 +452,13 @@ ul.projectInfo {
 	height: 24px;
 	position: relative;
 	z-index: 200;
-	background: rgb(252,252,252);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(252,252,252)), color-stop(100%, rgb(242,242,242)));
-	background: -webkit-linear-gradient(top, rgb(252,252,252) 0%, rgb(242,242,242) 100%);
-	background: -moz-linear-gradient(top, rgb(252,252,252) 0%, rgb(242,242,242) 100%);
-	background: -o-linear-gradient(top, rgb(252,252,252) 0%, rgb(242,242,242) 100%);
-	background: -ms-linear-gradient(top, rgb(252,252,252) 0%, rgb(242,242,242) 100%);
-	background: linear-gradient(top, rgb(252,252,252) 0%, rgb(242,242,242) 100%);
+	background: #fcfcfc;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #f2f2f2));
+	background: -webkit-linear-gradient(top, #fcfcfc 0%, #f2f2f2 100%);
+	background: -moz-linear-gradient(top, #fcfcfc 0%, #f2f2f2 100%);
+	background: -o-linear-gradient(top, #fcfcfc 0%, #f2f2f2 100%);
+	background: -ms-linear-gradient(top, #fcfcfc 0%, #f2f2f2 100%);
+	background: linear-gradient(top, #fcfcfc 0%, #f2f2f2 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f2f2f2',GradientType=0 );
 	margin-top: 15px;
 	border: 1px solid #C2C3C3;
@@ -732,13 +706,13 @@ form#contact-form textarea {
 	overflow: auto;
 }
 form#contact-form input[type=submit] {
-	background: rgb(252,252,252);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(252,252,252)), color-stop(100%, rgb(242,242,242)));
-	background: -webkit-linear-gradient(top, rgb(252,252,252) 0%, rgb(242,242,242) 100%);
-	background: -moz-linear-gradient(top, rgb(252,252,252) 0%, rgb(242,242,242) 100%);
-	background: -o-linear-gradient(top, rgb(252,252,252) 0%, rgb(242,242,242) 100%);
-	background: -ms-linear-gradient(top, rgb(252,252,252) 0%, rgb(242,242,242) 100%);
-	background: linear-gradient(top, rgb(252,252,252) 0%, rgb(242,242,242) 100%);
+	background: #fcfcfc;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #f2f2f2));
+	background: -webkit-linear-gradient(top, #fcfcfc 0%, #f2f2f2 100%);
+	background: -moz-linear-gradient(top, #fcfcfc 0%, #f2f2f2 100%);
+	background: -o-linear-gradient(top, #fcfcfc 0%, #f2f2f2 100%);
+	background: -ms-linear-gradient(top, #fcfcfc 0%, #f2f2f2 100%);
+	background: linear-gradient(top, #fcfcfc 0%, #f2f2f2 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f2f2f2',GradientType=0 );
 	border: 1px solid #C2C3C3;
 	-webkit-border-radius: 4px;
@@ -753,9 +727,9 @@ form#contact-form input[type=submit] {
 	color: #666666;
 	text-shadow: 0 1px 0 #FFF;
 	padding: 3px 16px;
-	margin-top: 0px;
+	margin-top: 0;
 	margin-left:5px;
-	float:left
+	float:left;
 }
 form#contact-form input[type=submit]:hover {
 	color: #222;
@@ -787,8 +761,7 @@ div#contactInfo {
 }
 div#contactInfo img {
 	display: block;
-	margin: 0 auto;
-	margin-top: 5px;
+	margin: 5px auto 0;
 	border: 1px solid #BBB;
 	-webkit-box-shadow: 0 3px 4px #CCC;
 	-moz-box-shadow: 0 3px 4px #CCC;
