@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fa">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>Register2</title>
+      <link rel="stylesheet" media="screen" type="text/css" href="../static/css/style.css" />
+      
+      
+      <style type="text/css">
+	
+
+         body{direction: rtl; text-align: right; font: 24px/45px tahoma;}
+         form{width: 580px;}
+         label{display: inline-block; width: 170px;}
+         input[type="submit"]{font: 12px/30px tahoma; margin: 10px 0;}
+	    
+      </style>
+      
+   </head>
+   
+   
+   
+   <body>
+   
+      
+    <!-- Start Wrapper -->
+    <div id="wrapper">
+    
+    
+        <!-- Start Header -->
+    	<div id="header">
+     
+            <div class="right">
+                <div id="logo">
+                    <h1>وبسایت من</h1>
+                </div>
+
+                <div id="tagline">
+                    <h2>یک سایت دیگر با وردپرس</h2>
+                </div>
+            </div>
+
+         
+
+                <br style="clear: both;" />
+
+            <ul id="menu">
+                
+                <li><a href="index.html"><strong>خانه</strong></a></li>
+                <li><a href="about.html">درباره</a></li>
+                <li><a href="Contact.html">ارتباط با ما</a></li>
+                <li><a href="help.html"><strong>راهنما</strong></a></li>
+                <li><a href="Register2.html">ثبت نام</a></li>
+                <li><a href="DashBoard.html">داشبورد</a></li>
+            </ul>
+            
+            <br style="clear: both;" />
+        </div>
+        <!-- End Header -->
+       
+       <br>
+<br>
+
+      <form action="" method="post" enctype="multipart/form-data">
+         <fieldset>
+         
+            <legend> مشخصات کاربری </legend>
+            <br>
+
+            <label> نام و نام خانوادگی : </label> <input type="text" name="txtName" title="خانوادگی">  <br />
+            <label>نام کاربری : </label> <input type="text" name="txtName" title="کاربری">  <br />
+            
+            <label> جنسیت :</label>  زن <input type="radio" value="زن" name="rdS-e-x" title="زن"> مرد <input type="radio" value="مرد" name="rdS-e-x" title="مرد">     <br />
+             <label>نوع کاربری (نقش) : </label>مدیر سایت <input name="chksport" value="Manager" type="checkbox">توسعه دهنده وب <input name="chksport" value="developer" type="checkbox">کاربر عادی<input name="chksport" value="user" type="checkbox"> <br>
+             <label>نوع کاربری :</label>
+             <select name="ddlknowus">
+                 <optgroup label="نقش"></optgroup>
+                 <option selected="selected">مدیر سایت</option>
+                 <option>توسعه دهنده وب</option>
+                 <option>کاربر عادی</option>
+             </select>
+            <br />
+             <label> تصویر : </label> <input type="file" name="flpicture">  <br />
+         </fieldset>
+         <fieldset>
+             <legend> مشخصات عضویت </legend>
+             <label> ایمیل : </label> <label>
+             <input type="email" name="email">
+         </label> <br />
+             <label> رمز عبور : </label> <label>
+             <input type="password" name="txtpassword">
+         </label> <br />
+             <label>تکرار روز عبور : </label> <label>
+             <input type="password" name="txtpassword">
+         </label> <br />
+         </fieldset>
+          <br>
+          <input type="submit" value=" ثبت نام ">
+      </form>
+    </div>
+   </body>
+</html>
