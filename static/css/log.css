@@ -549,10 +549,9 @@ from input[type=email], form textarea, form select {
 	width: 300px;
     padding: 8px;
     margin: 5px 0;
-	border-top: 1px solid #CCCCCC;
-	border-left: 1px solid #CCCCCC;
-	border-right: 1px solid #DDDDDD;
-	border-bottom: 1px solid #DDDDDD;
+    border: 1px solid #CCCCCC;
+    border-right-color: #DDDDDD;
+    border-bottom-color: #DDDDDD;
     font-family: B Yekan, Helvetica, sans-serif;
 }
 form input[type=text]:focus, form input[type=password]:focus, input[type=email]:focus, form textarea:focus  {
@@ -760,8 +759,7 @@ button, form input[type=submit] {
 	margin: 2px;
     font-size: 12px;
 	text-align: center;
-	text-shadow: 0 1px 1px #333333;
-	-webkit-box-shadow: 0 0 3px #CCCCCC;
+    -webkit-box-shadow: 0 0 3px #CCCCCC;
 	-moz-box-shadow: 0 0 3px #CCCCCC;
 	box-shadow: 0 0 3px #CCCCCC;
     -webkit-border-radius: 3px;
@@ -780,7 +778,7 @@ font-family: B Yekan;
     background-image: -o-linear-gradient(#59C8EF, #00A5DF);
     background-image: linear-gradient(top, #59C8EF, #00A5DF);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#59C8EF', endColorstr='#00A5DF');
-font-family: B Yekan
+font-family: B Yekan;
 }
 button:hover, form input[type=submit]:hover {
 	background-color: #53ADDF;
@@ -790,7 +788,7 @@ button:hover, form input[type=submit]:hover {
     background-image: -o-linear-gradient(#53ADDF, #2388BF);
     background-image: linear-gradient(top, #53ADDF, #2388BF);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#53ADDF', endColorstr='#2388BF');
-font-family: B Yekan
+font-family: B Yekan;
 }
 /* Grey */
 button.grey, form input[type=submit].grey {
@@ -804,7 +802,7 @@ button.grey, form input[type=submit].grey {
     background-image: -o-linear-gradient(#FFFFFF, #EEEEEE);
     background-image: linear-gradient(top, #FFFFFF, #EEEEEE);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#EEEEEE');
-font-family: B Yekan
+font-family: B Yekan;
 }
 button.grey:hover, form input[type=submit].grey:hover {
 	background-color: #EEEEEE;
@@ -814,7 +812,7 @@ button.grey:hover, form input[type=submit].grey:hover {
     background-image: -o-linear-gradient(#EEEEEE, #CCCCCC);
     background-image: linear-gradient(top, #EEEEEE, #CCCCCC);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#CCCCCC');
-font-family: B Yekan
+font-family: B Yekan;
 }
 /* Blue */
 button.blue, form input[type=submit].blue {
@@ -828,7 +826,7 @@ button.blue, form input[type=submit].blue {
     background-image: -o-linear-gradient(#59C8EF, #00A5DF);
     background-image: linear-gradient(top, #59C8EF, #00A5DF);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#59C8EF', endColorstr='#00A5DF');
-font-family: B Yekan
+font-family: B Yekan;
 }
 button.blue:hover, form input[type=submit].blue:hover {
 	background-color: #53ADDF;
@@ -838,7 +836,7 @@ button.blue:hover, form input[type=submit].blue:hover {
     background-image: -o-linear-gradient(#53ADDF, #2388BF);
     background-image: linear-gradient(top, #53ADDF, #2388BF);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#53ADDF', endColorstr='#2388BF');
-font-family: B Yekan
+font-family: B Yekan;
 }
 /* Green */
 button.green, form input[type=submit].green {
@@ -852,7 +850,7 @@ button.green, form input[type=submit].green {
     background-image: -o-linear-gradient(#C9DF6F, #B3CF40);
     background-image: linear-gradient(top, #C9DF6F, #B3CF40);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C9DF6F', endColorstr='#B3CF40');
-font-family: B Yekan
+font-family: B Yekan;
 }
 button.green:hover, form input[type=submit].green:hover {
 	background-color: #B3CF40;
@@ -862,7 +860,7 @@ button.green:hover, form input[type=submit].green:hover {
     background-image: -o-linear-gradient(#B3CF40, #93AF20);
     background-image: linear-gradient(top, #B3CF40, #93AF20);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B3CF40', endColorstr='#93AF20');
-font-family: B Yekan
+font-family: B Yekan;
 }
 /* Red */
 button.red, form input[type=submit].red {
@@ -876,7 +874,7 @@ button.red, form input[type=submit].red {
     background-image: -o-linear-gradient(#FF8F8F, #DF5353);
     background-image: linear-gradient(top, #FF8F8F, #DF5353);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8F8F', endColorstr='#DF5353');
-font-family: B Yekan
+font-family: B Yekan;
 }
 button.red:hover, form input[type=submit].red:hover {
 	background-color: #DF5353;
@@ -886,7 +884,7 @@ button.red:hover, form input[type=submit].red:hover {
     background-image: -o-linear-gradient(#DF5353, #BF3B3B);
     background-image: linear-gradient(top, #DF5353, #BF3B3B);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DF5353', endColorstr='#BF3B3B');
-font-family: B Yekan
+font-family: B Yekan;
 }
 /*********************************************** END OF Forms ************************************************/
 /*************************************************************************************************************/
