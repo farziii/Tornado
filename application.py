@@ -1,4 +1,3 @@
-
 # coding=utf-8
 
 import os.path
@@ -36,6 +35,15 @@ class ContactHandler(tornado.web.RequestHandler):
 
     def get(self):
         self.render('Contact.html')
+
+
+# noinspection PyMissingOrEmptyDocstring
+class ContactResultHandler(tornado.web.RequestHandler):
+    def data_received(self, chunk):
+        pass
+
+    def get(self):
+        self.render('ContactResult.html')
 
 
 # noinspection PyMissingOrEmptyDocstring
@@ -109,6 +117,7 @@ if __name__ == '__main__':
                   (r'/DashBoard.html', DashBoardHandler),
                   (r'/about.html', AboutHandler),
                   (r'/Contact.html', ContactHandler),
+                  (r'/ContactResult.html', ContactResultHandler),
                   (r'/help.html', HelpHandler),
                   (r'/Login.html', LoginHandler),
                   (r'/Register.html', RegisterHandler),
