@@ -1,4 +1,3 @@
-
 # coding=utf-8
 
 import os.path
@@ -19,6 +18,9 @@ class MainHandler(tornado.web.RequestHandler):
     def get(self):
         self.render('index.html')
 
+    def write_error(self, status_code, **kwargs):
+        self.write("'MainHandler' caused a %d error." % status_code)
+
 
 # noinspection PyMissingOrEmptyDocstring
 class AboutHandler(tornado.web.RequestHandler):
@@ -27,6 +29,9 @@ class AboutHandler(tornado.web.RequestHandler):
 
     def get(self):
         self.render('about.html')
+
+    def write_error(self, status_code, **kwargs):
+        self.write("'AboutHandler' caused a %d error." % status_code)
 
 
 # noinspection PyMissingOrEmptyDocstring
@@ -37,6 +42,9 @@ class ContactHandler(tornado.web.RequestHandler):
     def get(self):
         self.render('Contact.html')
 
+    def write_error(self, status_code, **kwargs):
+        self.write("'ContactHandler' caused a %d error." % status_code)
+
 
 # noinspection PyMissingOrEmptyDocstring
 class DashBoardHandler(tornado.web.RequestHandler):
@@ -45,6 +53,9 @@ class DashBoardHandler(tornado.web.RequestHandler):
 
     def get(self):
         self.render('DashBoard.html')
+
+    def write_error(self, status_code, **kwargs):
+        self.write("'DashBoardHandler' caused a %d error." % status_code)
 
 
 # noinspection PyMissingOrEmptyDocstring
@@ -55,6 +66,9 @@ class HelpHandler(tornado.web.RequestHandler):
     def get(self):
         self.render('help.html')
 
+    def write_error(self, status_code, **kwargs):
+        self.write("'HelpHandler' caused a %d error." % status_code)
+
 
 # noinspection PyMissingOrEmptyDocstring
 class LoginHandler(tornado.web.RequestHandler):
@@ -63,6 +77,9 @@ class LoginHandler(tornado.web.RequestHandler):
 
     def get(self):
         self.render('Login.html')
+
+    def write_error(self, status_code, **kwargs):
+        self.write("'LoginHandler' caused a %d error." % status_code)
 
 
 # noinspection PyMissingOrEmptyDocstring
@@ -73,6 +90,9 @@ class RegisterHandler(tornado.web.RequestHandler):
     def get(self):
         self.render('Register.html')
 
+    def write_error(self, status_code, **kwargs):
+        self.write("'RegisterHandler' caused a %d error." % status_code)
+
 
 # noinspection PyMissingOrEmptyDocstring
 class Register2Handler(tornado.web.RequestHandler):
@@ -81,6 +101,9 @@ class Register2Handler(tornado.web.RequestHandler):
 
     def get(self):
         self.render('Register2.html')
+
+    def write_error(self, status_code, **kwargs):
+        self.write("'Register2Handler' caused a %d error." % status_code)
 
 
 # noinspection PyMissingOrEmptyDocstring
@@ -91,6 +114,9 @@ class WebpagesHandler(tornado.web.RequestHandler):
     def get(self):
         self.render('Webpages.html')
 
+    def write_error(self, status_code, **kwargs):
+        self.write("'WebpagesHandler' caused a %d error." % status_code)
+
 
 # noinspection PyMissingOrEmptyDocstring
 class WebshowHandler(tornado.web.RequestHandler):
@@ -99,6 +125,9 @@ class WebshowHandler(tornado.web.RequestHandler):
 
     def get(self):
         self.render('webshow.html')
+
+    def write_error(self, status_code, **kwargs):
+        self.write("'WebshowHandler'You caused a %d error." % status_code)
 
 
 if __name__ == '__main__':
