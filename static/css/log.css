@@ -1407,7 +1407,7 @@ ul.image-gallery, ul.file-gallery {
     padding: 0;
 }
 ul.image-gallery li, ul.file-gallery li {
-    margin: 4px 9px 4px 9px; 
+    margin: 4px 9px 4px 9px;
     float: left;
     position: relative;
 }
@@ -1429,11 +1429,11 @@ ul.file-gallery li span {
     font-weight: bold;
 }
 #main-content ul.image-gallery li, #main-content ul.file-gallery li  {
-    margin: 4px 7px 4px 7px; 
+    margin: 4px 7px 4px 7px;
     float: left;
 }
 #side-content-left ul.image-gallery li, #side-content-right ul.image-gallery li {
-    margin: 2px 4px 2px 3px; 
+    margin: 2px 4px 2px 3px;
     float: left;
 }
 #side-content-left ul.image-gallery li div, #side-content-right ul.image-gallery li div{

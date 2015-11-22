@@ -109,11 +109,11 @@ p.moretext {
 }
 /***=== MAIN CSS ===***/
 body {
-	
+
 	background-color: #000000;
 }
 /** Top decoration **/
-div#top {	
+div#top {
 	width: 100%;
 	height: 6px;
 	background: #CECECE;
@@ -842,7 +842,7 @@ ul.infos li a:hover {
 div#stylechanger {
 	height: 60px;
 	width:30px;
-	position: fixed; 
+	position: fixed;
 	top: 140px;
 	left: 0;
 	background: #EEE;
